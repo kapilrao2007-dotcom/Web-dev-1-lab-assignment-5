@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashionista — Human-like Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">STORE HUB</div>
+    <div class="search"><input placeholder="Search for products..." aria-label="search"></div>
+    <div class="nav-actions">
+      <button class="icon" aria-label="cart">🛒</button>
+      <button class="icon" aria-label="account">👤</button>
+      <button class="btn-outline">Login</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <div class="left">
+        <h1>Winter Sale is Here!</h1>
+        <p>Up to 50% off on selected styles. Refresh your wardrobe with the latest trends.</p>
+        <a class="primary-cta" href="#shop">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="flash">⚡ Flash Sale: Extra 20% OFF! <span class="countdown">Ends in <strong>02 : 15 : 42</strong></span></div>
+
+  <main class="container grid" id="shop">
+    <aside class="filters" aria-label="filters">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <strong>Category</strong>
+        <label><input type="checkbox"> Men</label>
+        <label><input type="checkbox"> Women</label>
+        <label><input type="checkbox"> Accessories</label>
+      </div>
+      <div class="filter-group">
+        <strong>Price</strong>
+        <label><input type="checkbox"> Under $50</label>
+        <label><input type="checkbox"> $50 - $100</label>
+        <label><input type="checkbox"> $100+</label>
+      </div>
+    </aside>
+
+    <section>
+      <div class="cards-row">
+        <article class="card">
+          <img src="denim jacket.png" alt="Denim Jacket">
+          <h4>Classic Denim Jacket</h4>
+          <div class="price">$100.99</div>
+          <button class="add">Add to Cart</button>
+        </article>
+
+        <article class="card">
+          <img src="white sneakers.png" alt="Sneakers">
+          <h4>Men's White Sneakers</h4>
+          <div class="price">$150.99</div>
+          <button class="add">Add to Cart</button>
+        </article>
+
+        <article class="card">
+          <img src="womens summer dress.png" alt="Summer Dress">
+          <h4>Women's Summer Dress</h4>
+          <div class="price">$30.99</div>
+          <button class="add">Add to Cart</button>
+        </article>
+
+        <article class="card">
+          <img src="leather handbag.png" alt="Handbag">
+          <h4>Leather Handbag</h4>
+          <div class="price">$500.00</div>
+          <button class="add">Add to Cart</button>
+        </article>
+      </div>
+
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="test-row">
+          <div class="test">“Absolutely love the quality and fast shipping! My new favorite store.”<span class="who">— Harman singh soni.</span></div>
+          <div class="test">“Great selection and amazing deals. The flash sale was a steal!”<span class="who">— Nitesh kaidan.</span></div>
+          <div class="test">“Customer service was super helpful. Will definitely shop again.”<span class="who">— Chhatarpal yadav.</span></div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-card">
+          <h3>Stay in the Loop!</h3>
+          <p>Sign up for exclusive offers, new arrivals, and more.</p>
+          <form class="nl-form">
+            <input type="email" placeholder="Your email address" required>
+            <button class="subscribe">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Account</h4>
+        <ul><li>Orders</li><li>Wishlist</li></ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul><li>Contact</li><li>Returns</li></ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul><li>Instagram</li><li>Twitter</li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- tiny script for page-load micro animation -->
+  <script>
+    window.addEventListener('load', ()=> document.body.classList.add('loaded'));
+  </script>
+</body>
+</html>
